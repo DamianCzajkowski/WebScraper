@@ -24,7 +24,4 @@ flake:
 isort:
 	docker-compose -f $(COMPOSE_FILE) run --rm web isort .
 
-pylint:
-	docker-compose -f $(COMPOSE_FILE) run --rm web pylint .
-
-supercode: isort pylint flake mypy
+supercode: isort flake mypy
