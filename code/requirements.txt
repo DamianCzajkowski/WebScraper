@@ -1,2 +1,9 @@
 Django>=3.0,<4.0
 psycopg2-binary>=2.8
+
+# linters
+flake8==4.0.1
+isort==5.10.0
+django-stubs==1.9.0
+mypy==0.910
+pylint==2.11.1
